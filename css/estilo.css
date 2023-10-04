@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/******** Header **********/
+.miLogo {
+  width: 75px;
+}
+
+.miFondo {
+  background-color: white;
+}
+
+.miLink:hover {
+  color: rgb(252, 0, 155);
+}
+
+/* contenedor imagen de fondo */
+.contenedorInicio {
+  background-image: url(../img/imagen-fondo-inicio2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 98%;
+  background-position: center center;
+}
+
+.contenedorInicio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.textoEncima {
+  font-size: 80px;
+  color: white;
+  top: 40%;
+}
+
+.textoEncimaDos {
+  font-size: 80px;
+  color: white;
+  top: 50%;
+}
+
+.textoBtn a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  background-color: rgb(252, 0, 155);
+  padding: 5px 50px;
+  border-radius: 55px;
+  box-shadow: 6px 4px black;
+}
+
+.textoBtn a:hover {
+  color: black;
+  background-color: white;
+}
+
+.contenedorImgInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.CntIniAba {
+    background-image: url(../img/imagen-fondo-inicio3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+@media (max-width: 1023px) {
+  /* INICIO */
+  .contenedorInicio {
+    grid-template-columns: 1fr;
+  }
+  .textoBtn {
+    display: none;
+  }
+  .textoBtn a {
+    display: none;
+  }
+}
+
+/***** contenedor imagen de fondo ********/
+/*   .contenedorImagenInicio {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  } */
+
+/* .contenedorTxtImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.textoEncima {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+.textoEncimaDos {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+
+.btnCatalogo {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    background-color: rgb(252, 0, 155);
+    color: white;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 55px;
+    box-shadow: 6px 4px black;
+}
+
+.btnCatalogo:hover {
+    color: black;
+    background-color: white;
+}
+
+.imgLogoInicio {
+    position: absolute;
+    top: 85%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+} */
