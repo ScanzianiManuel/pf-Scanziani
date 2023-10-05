@@ -73,6 +73,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .CntIniAba {
@@ -125,7 +127,54 @@
   border: 1px solid rgb(252, 0, 155);
 }
 
-/*Responsive*/
+
+
+/******* QUIENES SOMOS ***************/
+/* soy nadia */
+
+.syNadia {
+    margin-top: 100px;
+}
+
+.syNadia h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Mooli", sans-serif;
+}
+
+.syNadia h3 {
+    text-align: center;
+    font-size: 65px;
+    font-family: "Courgette", cursive;
+    color: rgb(252, 0, 155);
+    font-weight: bold;
+}
+
+.boxNadia {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Mooli", sans-serif;
+}
+
+.pneg {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.imgPiñat {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+/**************Responsive***********/
 @media (max-width: 1023px) {
   /* INICIO */
   .contenedorInicio {
