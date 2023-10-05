@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Mooli&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -16,7 +19,9 @@
   color: rgb(252, 0, 155);
 }
 
-/* contenedor imagen de fondo */
+/***** INICIO **********/
+
+/******* contenedor imagen de fondo *******/
 .contenedorInicio {
   background-image: url(../img/imagen-fondo-inicio2.png);
   background-repeat: no-repeat;
@@ -32,23 +37,28 @@
 }
 
 .textoEncima {
-  font-size: 80px;
+  font-family: "Mooli", sans-serif;
+  font-size: 65px;
   color: white;
   top: 40%;
 }
 
 .textoEncimaDos {
+  font-family: "Courgette", cursive;
+  font-weight: bold;
   font-size: 80px;
   color: white;
   top: 50%;
 }
 
 .textoBtn a {
+  font-family: "Mooli", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   background-color: rgb(252, 0, 155);
-  padding: 5px 50px;
+  padding: 10px 50px;
   border-radius: 55px;
   box-shadow: 6px 4px black;
 }
@@ -59,29 +69,61 @@
 }
 
 .contenedorImgInicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
 }
 
 .CntIniAba {
-    background-image: url(../img/imagen-fondo-inicio3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    font-size: 40px;
-    text-align: center;
-    color: white;
+  background-image: url(../img/imagen-fondo-inicio3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
+.CntIniAba h2 {
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-family: "Mooli", sans-serif;
+  padding: 30px;
+  margin: 20px;
+}
 
+/***********Formulario contacto*********/
+.contenedorFormulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
 
+.puedesContactarnos p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Mooli", sans-serif;
+}
+.puedesContactarnos h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(252, 0, 155);
+  font-size: 40px;
+  font-family: "Courgette", cursive;
+}
 
-
-
-
-
+.formContacto {
+  text-align: left;
+  font-weight: bold;
+  color: rgb(252, 0, 155);
+  margin-top: 30px;
+  font-family: "Mooli", sans-serif;
+}
+.formContacto input,
+.formContacto textarea {
+  border: 1px solid rgb(252, 0, 155);
+}
 
 /*Responsive*/
 @media (max-width: 1023px) {
@@ -95,61 +137,12 @@
   .textoBtn a {
     display: none;
   }
+
+  /* FORMULARIO */
+  .contenedorFormulario {
+    grid-template-columns: 1fr;
+  }
+  .logFant {
+    display: none;
+  }
 }
-
-/***** contenedor imagen de fondo ********/
-/*   .contenedorImagenInicio {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-  } */
-
-/* .contenedorTxtImg {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.textoEncima {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    color: white;
-}
-
-.textoEncimaDos {
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    color: white;
-}
-
-
-.btnCatalogo {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    background-color: rgb(252, 0, 155);
-    color: white;
-    padding: 5px 30px;
-    text-decoration: none;
-    border-radius: 55px;
-    box-shadow: 6px 4px black;
-}
-
-.btnCatalogo:hover {
-    color: black;
-    background-color: white;
-}
-
-.imgLogoInicio {
-    position: absolute;
-    top: 85%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-} */
